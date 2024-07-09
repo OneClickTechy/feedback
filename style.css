@@ -71,3 +71,6 @@ body {
     transform: scale(0.90);
     transition-timing-function: linear;
 }
+.greeting-icon{
+  font-size: 500%;
+}

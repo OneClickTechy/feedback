@@ -25,9 +25,9 @@ function removeActive() {
 
 ratingSaver.addEventListener("click", () => {
   ratingContainer.innerHTML = `
-    <div>Thankyou for giving feedback</div>
-    <div>💖</div>
-    <div>Your feedback is ${score}</div>
+    <p><strong>Thankyou for giving feedback</strong></p>
+    <div class="greeting-icon">💖</div>
+    <div>Your feedback is <b>${score}<b></div>
     `;
 });
 //remove default active or previous active
