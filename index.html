@@ -7,12 +7,12 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <section class="rating-container">
+    <section class="rating-container" id="ratingContainer">
       <header>
         <strong> Your Feedback </strong>
       </header>
       <nav class="ratings" id="ratings">
-        <article class="rating  active" id="rating">
+        <article class="rating active" id="rating">
           <div class="rating-icon">😍</div>
           <small>Happy!!!</small>
         </article>
@@ -25,7 +25,12 @@
           <small>Poor!!!</small>
         </article>
       </nav>
-      <footer><button type="submit" id="ratingSaver" class="rating-saver">Submit feedback</button></footer>
+      <footer>
+        <button type="submit" id="ratingSaver" class="rating-saver">
+          Submit feedback
+        </button>
+      </footer>
     </section>
+    <script src="./script.js"></script>
   </body>
 </html>
