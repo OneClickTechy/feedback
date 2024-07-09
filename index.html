@@ -2,33 +2,30 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css">
     <title>feedback</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <section class="big-container">
+    <section class="rating-container">
       <header>
-        <h1>Your Feedback👀</h1>
+        <strong> Your Feedback </strong>
       </header>
-      <article class="inner-container">
-        <section class="feed-box">
-            <div class="big-emoji">😒</div>
-            <div class="feed-text">Unhappy</div>
-        </section>
-        <section class="feed-box">
-            <div class="big-emoji">😑</div>
-            <div class="feed-text">Normal</div>
-        </section>
-        <section class="feed-box">
-            <div class="big-emoji">😍</div>
-            <div class="feed-text">Happy</div>
-        </section>
-      </article>
-      <footer>
-        <button type="submit">Submit Feedback</button>
-      </footer>
+      <nav class="ratings" id="ratings">
+        <article class="rating  active" id="rating">
+          <div class="rating-icon">😍</div>
+          <small>Happy!!!</small>
+        </article>
+        <article class="rating" id="rating">
+          <div class="rating-icon">😑</div>
+          <small>Average!!!</small>
+        </article>
+        <article class="rating" id="rating">
+          <div class="rating-icon">😓</div>
+          <small>Poor!!!</small>
+        </article>
+      </nav>
+      <footer><button type="submit" id="ratingSaver" class="rating-saver">Submit feedback</button></footer>
     </section>
   </body>
 </html>

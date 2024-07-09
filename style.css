@@ -1,63 +1,73 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    width: auto;
-    background-image: linear-gradient(90deg, #1b1920 0%, #090e1f 100%);
+body {
+  background-image: linear-gradient(rgb(12, 12, 44), rgb(37, 37, 68));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  max-width: 100%;
+  color: white;
 }
-.big-container{
-    background-color: #1b1920;
-    border-radius: 20px;
-    width: 60%;
-    aspect-ratio: 3/1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 3rem;
-    padding: 2rem;
+.rating-container {
+  background-color: rgb(4, 3, 24);
+  width: 60%;
+  aspect-ratio: 1.5/0.5;
+  display: flex;
+  padding: 1rem;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px rgb(53, 51, 112);
+  gap: 2rem;
 }
-header > h1{
-    text-align: center;
-    color: white;
+.ratings {
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+  justify-content: center;
+  flex: 1;
 }
-
-.inner-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
+.rating {
+  padding: 1rem;
 }
-.feed-box{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 1.5rem;
-    transition-duration: 1s;
-    border-radius: 5px;
-}
-
-.feed-box:active,
-.feed-box:hover , .feed-box:focus{
+.rating:hover , .rating:focus{
     background-color: #ccc;
+    border-radius: 5px;
     cursor: pointer;
-    
 }
-
-
-.big-emoji{
-    width: 100%;
-    text-align: center;
-    font-size: 500%;
+.rating:active{
+    transform: scale(0.95);
 }
-.feed-text{
+.active{
+    background-color: #ccc;
+}
+.rating-icon {
+  font-size: 500%;
+}
+.rating > small {
+  text-align: center;
+  display: block;
+}
+.rating-saver {
+  padding: 1rem;
+  border-style: none;
+  border:2px solid rgb(5, 5, 36);
+}
+.rating-saver:hover,
+.rating-saver:focus {
     color: white;
+    background-color: black;
+    transform: scale(0.95);
+    transition-timing-function: linear;
+    border:2px solid rgb(47, 47, 109);
+}
+.rating-saver:active{
+    transform: scale(0.90);
+    transition-timing-function: linear;
 }
